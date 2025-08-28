@@ -1,0 +1,124 @@
+/*comentário*/
+
+/*cabeçalho*/
+
+.header{
+    background-color: #4D291B;/*cor de fundo*/
+    padding: 10px 20px; /*tamanho da área*/
+    align-items: center; /*alinhar no centro*/
+    display: flex;/*redimensionar*/
+    justify-content: space-between; /*espaço entre itens*/
+}
+/*configuarando a logo do site */
+.logo{
+    display: flex; 
+    align-items: center;
+    color:white;
+    font-size: 18px;/*tamanho da fonte do texto*/
+    font-weight: bold;/*texto em negrito*/
+
+   
+}
+.logo img{/*dimensões da imagem*/
+    width: 40px;/*tamanho*/
+    margin-right:10px; /*margens*/
+
+}
+/*Configuração da barra de pesquisa*/
+.search-box{
+  flex: 1;
+  max-width: 600px;/*largura máxima*/
+  margin: 0 20px;/*margens da caixa*/
+  position: relative; /*posição relativa*/
+}
+.search-box input{ /*configarações da parte de dentro*/
+    width: 100%; /*preecher toda a área*/
+    padding: 10px 40px 10px 15px; /*definiondo o espaço de cima, direita, baixo,esuqerda*/
+    border: none; /*borda da caixa*/
+    border-radius: 20px;/*expessora*/
+    font-size: 16px;/*tamanho da fonte do texto*/
+}
+
+/*CONFIGURANDO OS ÍCONES DO MEU SUPERIOR*/
+.icons{
+    display: flex; /* os ícones ficam flexíveis a mudança de tela*/
+    gap: 15px; /*espaço entre os ícones */
+   align-items: center; /*alinhamento vertical dos ícones*/
+
+}
+
+.icons img{ /*configurando as imagens dos ícones*/
+     width:32px;
+     height: 32px;
+     cursor: pointer;
+}
+
+/*CONFIGURAÇÕES DO RODAPÉ */
+.footer{
+    background-color: #BF9F7D;
+    padding: 15px 40px 15px 40px;
+    color: #4D291B; /*cor do texto*/
+    font-family: 'Times New Roman', Times, serif; /*fonte dos textos*/
+
+} 
+
+.footer-esquerdo{
+    font-weight: bold; /*colocando o texto em negrito*/
+    margin: 0;
+}
+
+.footer-direito{
+    text-align: right;
+    margin: 0 0 8px 0;
+}
+
+.icons-sociais {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.icons-sociais img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s; /* animação suave ao passar o mouse em cima*/
+}
+
+   /*configuraçõesde tela*/
+html, body{
+    height: 100%; /*ocupar 100% a tela */
+    margin: 0;/*remover margens padrão */
+    display:flex;
+    flex-direction: column; /*orgaizar as colunas*/
+
+}
+main{
+    flex: 1; /*mandar o rodapé para baixo */
+}
+
+/*Carrossel de textos */
+.carrossel-textos {
+    position: relative; /*posição relativas*/
+    width: 900%; /*largura do carrossel*/
+    max-width: 20px; /*largura máxima*/
+    margin: 20px auto; /*marge de 20px em todos os lados*/
+    border-radius: 20px; /*arredondar bordas*/
+    box-shadow: 0px 4px 8px rgba(193, 185, 185, 0.584);/*sombra*/
+    overflow: hidden; /*esconder o que ultrapassar a borda*/
+}
+
+/*configurando imagens do banner */
+.slide-banner{
+    display: none; /*esconder os slider iniciamente*/
+   width: 100%; /*ocupar todas as larguras do carrossel */
+    border-radius: 20px; /*arredondar as bordas*/
+}
+
+/*mostrando apenas o slide que eu defini com a classe  slide-banner-ativo*/
+.slide-banner-ativo{
+    width: 100%; /*ocupar toda a largura do slide*/
+    border-radius: 20px; /*arredondar as bordas*/
+    display: block;
+} 
+
+
